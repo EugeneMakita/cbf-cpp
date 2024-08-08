@@ -33,6 +33,6 @@ to run the actual script
 docker run --rm -v $(pwd)/results:/results cbf_tutorial_image_2 /bin/bash -c "/code/run_script"
 ```
 
-The example executed by default is the single integrator with state space bounds. Edit the capsule and modify the "run" file by commenting/uncommenting its last lines to execute other examples.
+The example executed by default is the single integrator with state space bounds. Modify the "run" file by commenting/uncommenting its last lines to execute other examples.
 
 Each example generates some plots in PNG format and a CSV file with simulation results to be download for further analysis with other tools (e.g. Matlab). Details about plotted and logged data can be found in the source file of each example. 
