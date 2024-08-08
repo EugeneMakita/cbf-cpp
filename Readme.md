@@ -20,8 +20,9 @@ The code is designed to be compiled on almost any platform (Linux, Windows, Mac)
 * 6-DOF manipulator (PUMA 560) avoiding an obstacle
 
 ## Instructions
-This was clone from codeocean(https://codeocean.com/capsule/8942623/tree/v1) but i couldn't reproduce it on my local so i decided to reporoduce the enviroment that was running on codeocean and run it locally. It also requires an academic/org email address for you to run the code.
-so build the image like this remove the --platform if you are on linux
+This repository was cloned from codeocean(https://codeocean.com/capsule/8942623/tree/v1) but i couldn't reproduce it on my local machine (MacOS) so i decided to reproduce the enviroment that was running on codeocean and run it locally. Codeocean also requires an academic/org email address for you to run the code.
+To build the image run the following command but you may remove the --platform if you are not on MacOS
+
 ```
 docker build --platform linux/amd64 -t cbf_tutorial_image_2 .
 ```
