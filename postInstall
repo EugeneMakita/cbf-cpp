@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -e
+mkdir libraries
+cd libraries
+git clone --recursive https://github.com/oxfordcontrol/osqp
+cd osqp
+git checkout 0b34f2ef5c5eec314e7945762e1c8167e937afbd
+git submodule update --init --recursive
+mkdir build
+cd build
+cmake -G "Unix Makefiles" -DENABLE_MKL_PARDISO=OFF ..
+cmake --build . --target install

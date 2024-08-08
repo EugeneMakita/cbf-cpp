@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -ex
+
+# This is the master script for the capsule. When you click "Reproducible Run", the code in this file will execute.
+
+cd /code/cbf_tutorial
+mkdir build
+cd build
+cmake ..
+make
+
+./single_integrator
+#./double_integrator
+#./single_integrator_2dof
+#./manipulator
