@@ -20,6 +20,17 @@ The code is designed to be compiled on almost any platform (Linux, Windows, Mac)
 * 6-DOF manipulator (PUMA 560) avoiding an obstacle
 
 ## Instructions
+This was clone from so that i could run it locally and i was running this on my mac 
+so build the image like this remove the --platform if you are on linux
+```
+   docker build --platform linux/amd64 -t cbf_tutorial_image_2 .
+```
+
+to run the actual script 
+
+```
+    docker run --rm -v $(pwd)/results:/results cbf_tutorial_image_2 /bin/bash -c "/code/run_script"
+```
 The "Reproducbile Run" command executes the "run" file in the code directory. The example executed by default is the single integrator with state space bounds. Edit the capsule and modify the "run" file by commenting/uncommenting its last lines to execute other examples.
 
 Each example generates some plots in PNG format and a CSV file with simulation results to be download for further analysis with other tools (e.g. Matlab). Details about plotted and logged data can be found in the source file of each example. 
