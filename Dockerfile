@@ -36,4 +36,4 @@ RUN bash /postInstall
 COPY cbf_tutorial /code/cbf_tutorial
 COPY run /code/run_script
 RUN chmod +x /code/run_script
-RUN bash /code/run_script
+#RUN bash /code/run_script
